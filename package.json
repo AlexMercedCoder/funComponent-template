@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "webpack --watch",
-    "dev": "PORT=4000 webpack-dev-server --open",
+    "dev": "cross-env PORT=4000 webpack-dev-server --open",
     "build": "webpack --env.production"
   },
   "keywords": [],
@@ -29,5 +29,8 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "xml-loader": "^1.2.1"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.2"
   }
 }
